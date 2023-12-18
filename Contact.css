@@ -1,0 +1,340 @@
+body{
+    padding: 40px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #EEF5FF;
+}
+
+
+.navbar-brand{
+    margin-left: 220px;
+    font-size: 70px;
+    font-family: 'Brush Script MT', cursive; 
+
+}
+
+nav{
+    height: 150px;
+    margin-top: 40px;
+}
+
+.nav-link{
+    font-size: 25px;
+    margin-right: 13px;
+    background-color: #C5FFF8;
+    color: red;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.navbar-nav{
+    margin-left: 220px;
+}
+
+
+.mx-lg-auto{
+    border: 10px solid blue;
+    border-radius: 100%;
+
+}
+
+#hero-2{
+    width: 370px;
+}
+
+#images{
+    margin-left: 40px;
+}
+
+h2{
+    font-size: 40px;
+    margin-top: 40px;
+}
+
+#contact-info p{
+    font-size: 17px;
+    font-weight: 700;
+    color: rgb(88, 79, 79);
+}
+
+#images img{
+    border-radius:100%;
+    height: 50px;
+    width: 50px;
+    margin-top: 20px;
+    margin-right: 2px;
+
+}
+
+button{
+    font-size: 20px;
+    background-color:rgb(42, 165, 144);
+    font-weight: 500px;
+    margin-top: 15px;
+    border-radius: 80px;
+    margin-left: 35px;
+}
+
+h5{
+    height: 50px;
+    font-size: 35px;
+    border-radius: 10px;
+    background-color:rgb(42, 165, 144);
+    font-weight: 700;
+    color: white;display: inline;
+}
+
+.text-wrap{
+    height: 50px;
+    font-size: 35px;
+    border-radius: 10px;
+}
+
+p{
+    margin-top: 20px;
+}
+
+.rounded{
+    display: flex;
+    margin-top: 100px;
+}
+
+@media(max-width:992px){
+    h5{
+        font-size: 25px;
+        margin-right: 180px;
+    }
+}
+
+@media(max-width:780px){
+    h5{
+        font-size: 22px;
+    }
+}
+
+@media(max-width:717px){
+    h5{
+        font-size: 20px;
+    }
+}
+
+@media(max-width:675px){
+    h5{
+        font-size: 15px;
+    }
+}
+
+@media(max-width:612px){
+    h5{
+        font-size: 22px;
+        margin-right: 100px;
+    }
+}
+
+@media(max-width:443px){
+    h5{
+        font-size: 25px;
+        margin-right: 10px;
+    }
+}
+
+@media(max-width:444px){
+    h2{
+        font-size: 32px;
+    }
+}
+
+.contact_imgg{
+    margin-top: 200px;
+    margin-left: 300px;
+    width: 850px;
+    height: 850px;
+}
+
+@media(max-width:1206px){
+    .contact_imgg{
+        margin-top: 150px;
+        margin-left: 200px;
+        width: 700px;
+        height: 700px;
+    }
+}
+
+@media(max-width:992px){
+    .contact_imgg{
+        margin-top: 150px;
+        margin-left: 20px;
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@media(max-width:707px){
+    .contact_imgg{
+        margin-top: 150px;
+        margin-left: 20px;
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media(max-width:449px){
+    .contact_imgg{
+        margin-top: 150px;
+        margin-left: 20px;
+        width: 300px;
+        height: 300px;
+    }
+}
+
+#github_svg{
+    height: 40px;
+    width: 40px;
+}
+
+#instagram_svg{
+    height: 40px;
+    width: 40px;
+}
+
+#gmail_svg{
+    height: 40px;
+    width: 40px;
+}
+
+#linkin_svg{
+    height: 40px;
+    width: 40px;
+}
+
+#twitter{
+    height: 40px;
+    width: 40px;
+}
+
+
+#footer-1{
+    margin-top: 250px;
+
+}
+
+@media(max-width:992px){
+    #footer-1{
+        margin-top: 100px;
+
+    }
+}
+
+@media(max-width:412px){
+    #footer-1{
+        margin-top: 200px;
+
+    }
+}
+
+@media(max-width:450px){
+    #twitter{
+        width: 20px;
+        height: 20px;
+
+    }   
+}
+
+@media(max-width:450px){
+    #instagram_svg{
+        width: 20px;
+        height: 20px;
+
+    }   
+}
+
+@media(max-width:450px){
+    #linkin_svg{
+        width: 20px;
+        height: 20px;
+
+    }   
+}
+
+@media(max-width:450px){
+    #github_svg{
+        width: 20px;
+        height: 20px;
+
+    }   
+}
+
+@media(max-width:450px){
+    #linkin_svg{
+        width: 20px;
+        height: 20px;
+
+    }   
+}
+
+@media(max-width:414px){
+    #linkin_svg{
+        width: 40px;
+        height: 40px;
+
+    }   
+}
+
+@media(max-width:414px){
+    #twitter{
+        width: 40px;
+        height: 40px;
+
+    }   
+}
+
+@media(max-width:414px){
+    #github_svg{
+        width: 40px;
+        height: 40px;
+
+    }   
+}
+
+@media(max-width:414px){
+    #gmail_svg{
+        width: 40px;
+        height: 40px;
+
+    }   
+}
+
+@media(max-width:414px){
+    #instagram_svg{
+        width: 40px;
+        height: 40px;
+
+    }   
+}
+
+@media(max-width:414px){
+    #footer-1{
+       margin-top: 100px;
+    }   
+}
+
+@media(max-width:450px){
+    body{
+        padding-left: 80px;
+    }   
+}
+
+@media(max-width:450px){
+    .navbar-brand{
+        font-size: 35px;
+        margin-right: 280px;
+        margin-left: 100px;
+       
+    }
+}
+
+
+
+
+
+
+

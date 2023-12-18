@@ -1,0 +1,80 @@
+body{
+    padding: 40px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #EEF5FF;
+}
+
+
+.navbar-brand{
+    margin-left: 220px;
+    font-size: 70px;
+    font-family: 'Brush Script MT', cursive; 
+
+}
+
+nav{
+    height: 150px;
+    margin-top: 40px;
+}
+
+.nav-link{
+    font-size: 25px;
+    margin-right: 13px;
+    background-color: #C5FFF8;
+    color: red;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.navbar-nav{
+    margin-left: 220px;
+}
+
+
+
+.lead{
+    line-height: 30px;
+    margin-top: 40px;
+    color: brown;
+}
+
+.display-5{
+    font-size: 60px;
+    font-family: 'Brush Script MT', cursive; 
+
+}
+
+
+#twitter{
+    width: 40px;
+    height: 40px;
+}
+
+#instagram_svg{
+    width: 40px;
+    height: 40px;
+}
+
+#github_svg{
+    width: 40px;
+    height: 40px;
+}
+
+#linkin_svg{
+    width: 40px;
+    height: 40px;
+}
+
+#gmail_svg{
+    width: 40px;
+    height: 40px;
+}
+
+@media(max-width:450px){
+    .navbar-brand{
+        font-size: 35px;
+        margin-right: 280px;
+        margin-left: 100px;
+       
+    }
+}

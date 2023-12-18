@@ -1,0 +1,211 @@
+body{
+    padding: 40px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #EEF5FF;
+}
+
+.navbar-brand{
+    margin-left: 220px;
+    font-size: 70px;
+    font-family: 'Brush Script MT', cursive; 
+
+}
+
+nav{
+    height: 150px;
+    margin-top: 40px;
+}
+
+.nav-link{
+    font-size: 25px;
+    margin-right: 13px;
+    background-color: #C5FFF8;
+    color: red;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.navbar-nav{
+    margin-left: 220px;
+}
+
+
+.d-block{
+    border-radius: 100%;
+    border: 10px solid red;
+   
+
+}
+li{
+    color: blue;
+}
+.row flex-lg-row-reverse align-items-center g-5 py-5{
+    background-color: black;
+}
+
+.lead{
+    line-height: 30px;
+    margin-top: 40px;
+    color: brown;
+}
+
+
+#featured-3{
+    margin-top: 350px;
+}
+
+h6{
+    color:red;
+}
+
+h5{
+    color: rgb(88, 88, 187);
+}
+
+
+.row{ 
+    height: 5vh;
+}
+
+#twitter{
+    width: 40px;
+    height: 40px;
+}
+
+#instagram_svg{
+    width: 40px;
+    height: 40px;
+}
+
+#github_svg{
+    width: 40px;
+    height: 40px;
+}
+
+#linkin_svg{
+    width: 40px;
+    height: 40px;
+}
+
+#gmail_svg{
+    width: 40px;
+    height: 40px;
+}
+
+
+h6{
+    font-size: 30px;
+    color:black;
+}
+
+#featured-3{
+    margin-top: 500px;
+
+}
+
+@media(max-width:992px){
+    #featured-3{
+        margin-top: 800px;
+
+    }
+}
+
+@media(max-width:768px){
+    #featured-3{
+        margin-top: 650px;
+
+    }
+}
+
+
+#footer-1{
+    margin-top: 250px;
+
+}
+
+@media(max-width:992px){
+    #footer-1{
+        margin-top: 550px;
+
+    }
+}
+
+@media(max-width:412px){
+    #footer-1{
+        margin-top: 700px;
+
+    }
+}
+
+@media(max-width:450px){
+    #twitter{
+        width: 20px;
+        height: 20px;
+
+    }   
+}
+
+@media(max-width:450px){
+    #instagram_svg{
+        width: 20px;
+        height: 20px;
+
+    }   
+}
+
+@media(max-width:450px){
+    #linkin_svg{
+        width: 20px;
+        height: 20px;
+
+    }   
+}
+
+@media(max-width:450px){
+    #github_svg{
+        width: 20px;
+        height: 20px;
+
+    }   
+}
+
+@media(max-width:450px){
+    #linkin_svg{
+        width: 20px;
+        height: 20px;
+
+    }   
+}
+
+@media(max-width:450px){
+    body{
+        padding-left: 80px;
+    }   
+}
+
+@media(max-width:387px){
+    #footer-1{
+        margin-top: 800px;
+
+    } 
+}
+
+
+@media(max-width:450px){
+    .navbar-brand{
+        font-size: 35px;
+        margin-right: 280px;
+        margin-left: 100px;
+       
+    }
+}
+
+@media(max-width:360px){
+    #featured-3{
+        margin-top: 800px;
+
+    } 
+}
+
+
+

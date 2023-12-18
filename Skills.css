@@ -1,0 +1,649 @@
+body{
+    padding: 40px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #EEF5FF;
+}
+.navbar-brand{
+    margin-left: 220px;
+    font-size: 70px;
+    font-family: 'Brush Script MT', cursive; 
+
+}
+
+nav{
+    height: 150px;
+    margin-top: 40px;
+}
+
+.nav-link{
+    font-size: 25px;
+    margin-right: 13px;
+    background-color: #C5FFF8;
+    color: red;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.navbar-nav{
+    margin-left: 220px;
+}
+
+.d-block{
+    border-radius: 100%;
+    border: 10px solid red;
+}
+
+
+.lead{
+    line-height: 30px;
+    margin-top: 40px;
+    color: brown;
+}
+
+.display-5{
+    font-size: 60px;
+    font-family: 'Brush Script MT', cursive;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+
+h2{
+    margin-left: 70px;
+    margin-top: 40px;
+    font-size: 40px;   
+}
+
+#para{
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;     
+    text-align: left;
+}
+
+#skill_svg{
+    width: 750px;
+    height: 480px;
+}
+
+h6{
+    margin-left: 100px;
+    margin-right: 100px;
+    line-height: 39px;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 50px;
+    text-align: left;
+}
+
+.skills_description{
+    padding: 40px 40px 40px 40px;
+}
+
+
+.java{
+    border:  2px solid black;
+    width: 400px;
+    height: 40px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+
+.python{
+    border:  2px solid black;
+    width: 400px;
+    height: 40px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+
+.c{
+    border:  2px solid black;
+    width: 400px;
+    height: 40px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+
+}
+
+.html{
+    border:  2px solid black;
+    width: 400px;
+    height: 40px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+
+.css{
+    border:  2px solid black;
+    width: 400px;
+    height: 40px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+
+.bootstrap{
+    border:  2px solid black;
+    width: 400px;
+    height: 40px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+
+
+.sql{
+    border:  2px solid black;
+    width: 400px;
+    height: 40px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+
+.java_percent{
+    border: 2px solid black;
+    height: 40px;
+    width: 40%;
+    border-radius: 15px;
+    background-color:rgb(158, 231, 85);
+    display: flex;
+}
+
+
+.python_percent{
+    border: 2px solid black;
+    height: 40px;
+    width: 60%;
+    border-radius: 15px;
+    background-color:rgb(158, 231, 85);
+    display: flex;
+}
+
+.html_percent{
+    border: 2px solid black;
+    height: 40px;
+    width: 90%;
+    border-radius: 15px;
+    background-color:rgb(158, 231, 85);
+    display: flex;
+}
+
+.css_percent{
+    border: 2px solid black;
+    height: 40px;
+    width: 90%;
+    border-radius: 15px;
+    background-color:rgb(158, 231, 85);
+    display: flex;
+}
+
+.bootstrap_percent{
+    border: 2px solid black;
+    height: 40px;
+    width: 70%;
+    border-radius: 15px;
+    background-color:rgb(158, 231, 85);
+    display: flex;
+}
+
+.c_percent{
+    border: 2px solid black;
+    height: 40px;
+    width: 30%;
+    border-radius: 15px;
+    background-color:rgb(158, 231, 85);
+    display: flex;
+}
+
+.sql_percent{
+    border: 2px solid black;
+    height: 40px;
+    width: 30%;
+    border-radius: 15px;
+    background-color:rgb(158, 231, 85);
+    display: flex;
+}
+
+.java_img{
+    margin-top: 2px;
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+}
+
+.python_img{
+    margin-top: 2px;
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+}
+
+.html_img{
+    margin-top: 2px;
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+}
+
+.css_img{
+    margin-top: 2px;
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+}
+
+.c_img{
+    margin-top: 2px;
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+}
+
+.bootstrap_img{
+    margin-top: 2px;
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+}
+
+.sql_img{
+    margin-top: 2px;
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+}
+
+#py{
+    margin-top: 8px;
+    height: 40px;
+    margin-left: 60px;
+    font-weight: 600;
+    color: red; 
+    font-size: 20px;
+} 
+
+#ht{
+    margin-top: 8px;
+    height: 40px;
+    margin-left: 60px;
+    font-weight: 600;
+    color: red; 
+    font-size: 20px;
+} 
+
+#ja{
+    margin-top: 8px;
+    height: 40px;
+    margin-left: 60px;
+    font-weight: 600;
+    color: red;
+    font-size: 20px;
+}
+
+#c{
+    margin-top: 8px;
+    height: 40px;
+    margin-left: 60px;
+    font-weight: 600;
+    color: red;
+    font-size: 20px;
+}
+
+#sq{
+    margin-top: 8px;
+    height: 40px;
+    margin-left: 60px;
+    font-weight: 600;
+    color: red;
+    font-size: 20px;
+}
+
+#bo{
+    margin-top: 8px;
+    height: 40px;
+    margin-left: 60px;
+    font-weight: 600;
+    color: red;
+    font-size: 20px;
+}
+
+#margin-top-right{
+    margin-top: 100px;
+    flex-direction: column;
+}
+
+@media(max-width:1400px){
+    #skill_svg{
+        width: 400px;
+        height: 450px;
+    }    
+}
+
+@media(max-width:1400px){
+    .skills_description{
+        width: 400px;
+        height: 300px;
+    }
+    
+}
+
+
+
+@media(max-width:992px){
+    #skill_svg{
+        width: 300px;
+        height: 350px;
+    }    
+}
+
+@media(max-width:992px){
+    .java{
+        width: 300px;
+        height: 30px;
+    }
+    
+}
+
+@media(max-width:992px){
+    .java_percent{
+        width: 40%;
+        height: 30px;
+    }
+    
+}
+     
+
+@media(max-width:992px){
+    #ja{
+        font-size: 15px;
+    }
+    
+}
+
+@media(max-width:992px){
+    .java_img{
+        height: 25px;
+        width : 25px;
+        }
+    
+}
+
+
+@media(max-width:992px){
+    .python{
+        width: 300px;
+        height: 30px;
+    }
+    
+}
+
+@media(max-width:992px){
+    .python_percent{
+        width: 60%;
+        height: 30px;
+    }
+    
+}
+     
+
+@media(max-width:992px){
+    #py{
+        font-size: 15px;
+    }
+    
+}
+
+@media(max-width:992px){
+    .python_img{
+        height: 25px;
+        width : 25px;
+        }
+    
+}
+  
+
+
+@media(max-width:992px){
+    .css{
+        width: 300px;
+        height: 30px;
+    }
+    
+}
+
+@media(max-width:992px){
+    .css_percent{
+        width: 90%;
+        height: 30px;
+    }
+    
+}
+     
+
+@media(max-width:992px){
+    #css{
+        font-size: 15px;
+    }
+    
+}
+
+
+@media(max-width:992px){
+    .sql{
+        width: 300px;
+        height: 30px;
+    }
+    
+}
+
+@media(max-width:992px){
+    .sql_percent{
+        width: 30%;
+        height: 30px;
+    }
+    
+}
+     
+
+@media(max-width:992px){
+    #sq{
+        font-size: 15px;
+    }
+    
+}
+
+@media(max-width:992px){
+    .sql_img{
+        height: 25px;
+        width : 25px;
+        }
+    
+}
+
+@media(max-width:992px){
+    .css_img{
+        height: 25px;
+        width : 25px;
+        }
+    
+}
+
+
+@media(max-width:992px){
+    .html{
+        width: 300px;
+        height: 30px;
+    }
+    
+}
+
+@media(max-width:992px){
+    .html_percent{
+        width: 90%;
+        height: 30px;
+    }
+    
+}
+     
+
+@media(max-width:992px){
+    #ht{
+        font-size: 15px;
+    }
+    
+}
+
+@media(max-width:992px){
+    .html_img{
+        height: 25px;
+        width : 25px;
+        }
+    
+}
+
+@media(max-width:992px){
+    .bootstrap{
+        width: 300px;
+        height: 30px;
+    }
+    
+}
+
+@media(max-width:992px){
+    .bootstrap_percent{
+        width: 70%;
+        height: 30px;
+    }
+    
+}
+     
+
+@media(max-width:992px){
+    #bo{
+        font-size: 15px;
+    }
+    
+}
+
+@media(max-width:992px){
+    .bootstrap_img{
+        height: 25px;
+        width : 25px;
+        }
+    
+}
+
+
+
+@media(max-width:992px){
+    .c{
+        width: 300px;
+        height: 30px;
+    }
+    
+}
+
+@media(max-width:992px){
+    .c_percent{
+        width: 30%;
+        height: 30px;
+    }
+    
+}
+     
+
+@media(max-width:992px){
+    #c{
+        font-size: 15px;
+    }
+    
+}
+
+@media(max-width:992px){
+    .c_img{
+        height: 25px;
+        width : 25px;
+        }
+    
+}
+
+
+@media(max-width:420px){
+    .skills_description{
+        margin-top: 500px;
+        margin-left: 10px;
+        }
+    
+}
+
+
+@media(max-width:576px){
+    .skills_description{
+        margin-top: 500px;
+        margin-left: 10px;
+        }
+    
+}
+
+
+
+#footer-1{
+    margin-top: 200px;
+
+}
+
+#twitter{
+    width: 40px;
+    height: 40px;
+}
+
+#instagram_svg{
+    width: 40px;
+    height: 40px;
+}
+
+#github_svg{
+    width: 40px;
+    height: 40px;
+}
+
+#linkin_svg{
+    width: 40px;
+    height: 40px;
+}
+
+#gmail_svg{
+    width: 40px;
+    height: 40px;
+}
+
+@media(max-width:991px){
+    #footer-1{
+        margin-top: 200px;
+    }
+}
+
+@media(max-width:450px){
+    .navbar-brand{
+        font-size: 35px;
+        margin-right: 280px;
+        margin-left: 100px;
+       
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
