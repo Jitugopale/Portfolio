@@ -120,3 +120,11 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Navigation Bar */
+.gradient-text {
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6, #06b6d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
