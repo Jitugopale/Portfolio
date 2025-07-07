@@ -17,7 +17,7 @@ export default function Home() {
     <>
       <div className="main min-h-screen">
         {/* Hero Section */}
-        <section className="pt-12 px-4 lg:px-16">
+        <section className="pt-12 px-4 lg:px-28">
           <div className="grid grid-cols-1 lg:grid-cols-2">
             <div>
               <h1 className="text-lg text-muted-foreground">Hello, I'm</h1>
@@ -67,8 +67,8 @@ export default function Home() {
           </div>
         </section>
 
-        <section>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 p-6 mt-12 mx-10">
+        <section className="mt-32 py-6 bg-gray-50">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 p-6 mt-12 lg:mx-20">
             <Card className="bg-white dark:bg-gray-800 shadow-lg">
             <CardContent className="flex flex-col items-center">
               <div className="font-bold text-2xl lg:text-3xl text-blue-500">5+</div>

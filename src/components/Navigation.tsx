@@ -15,11 +15,11 @@ const Navigation = () => {
 
       {/* Desktop Navigation */}
       <ul className='hidden md:flex gap-7 text-sm font-medium cursor-pointer'>
-            <Link href="#" className='transition-colors hover:text-blue-500'>Home</Link>
-            <Link href="#" className='transition-colors hover:text-blue-500'>About</Link>
-            <Link href="#" className='transition-colors hover:text-blue-500'>Skills</Link>
-            <Link href="#" className='transition-colors hover:text-blue-500'>Projects</Link>
-            <Link href="#" className='transition-colors hover:text-blue-500'>Contact</Link>
+            <Link href="/" className='transition-colors hover:text-blue-500'>Home</Link>
+            <Link href="/about" className='transition-colors hover:text-blue-500'>About</Link>
+            <Link href="/skills" className='transition-colors hover:text-blue-500'>Skills</Link>
+            <Link href="projects" className='transition-colors hover:text-blue-500'>Projects</Link>
+            <Link href="/contact" className='transition-colors hover:text-blue-500'>Contact</Link>
         </ul>
         <div className='hidden md:flex gap-5 items-center'>
           <Button variant="ghost" size="icon" asChild>
