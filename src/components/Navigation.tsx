@@ -10,8 +10,8 @@ const Navigation = () => {
   const [isOpen,setIsOpen] = useState(false);
   return (
     <>
-    <nav className='flex justify-between mx-auto px-4 py-3 sm:px-6 lg:px-24 lg:py-3 items-center'>
-      <h1 className='text-2xl font-bold gradient-text'>Alex Johnson</h1>
+    <nav className='flex justify-between px-4 py-5 max-w-7xl mx-auto sm:px-6 lg:px-8'>
+      <h1 className='text-2xl font-bold gradient-text'>Jitesh Gopale</h1>
 
       {/* Desktop Navigation */}
       <ul className='hidden md:flex gap-7 text-sm font-medium cursor-pointer'>
@@ -59,7 +59,7 @@ const Navigation = () => {
           //   <Link href="#" className='transition-colors hover:text-blue-500'>Contact</Link>
           // </ul>
           <ul className='flex flex-col absolute shadow-lg top-16 left-0 bg-white dark:bg-gray-800 w-full md:hidden gap-7 text-sm font-medium cursor-pointer'>
-            <Link href="#" className='transition-colors hover:text-blue-500'>Home</Link>
+            <Link href="#" className='transition-colors hover:text-blue-500 text-red-500'>Home</Link>
             <Link href="#" className='transition-colors hover:text-blue-500'>About</Link>
             <Link href="#" className='transition-colors hover:text-blue-500'>Skills</Link>
             <Link href="#" className='transition-colors hover:text-blue-500'>Projects</Link>
