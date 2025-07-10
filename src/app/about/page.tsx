@@ -66,6 +66,57 @@ const AboutPage = () => {
         </div>
         </div>
       </section>
+
+      <section className="py-20 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto">
+            <div className="max-w-2xl mx-auto">
+              <div className="text-center mb-5">
+                <h1 className="text-3xl lg:text-4xl font-bold">
+                  Professional Experience
+                </h1>
+              </div>
+            </div>
+            <div className="text-center">
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                My journey through the tech industry
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+          <div className="max-w-7xl mx-auto">
+            <div className="max-w-2xl mx-auto">
+              <div className="text-center mb-5">
+                <h1 className="text-3xl lg:text-4xl font-bold">
+                  Key Achievements
+                </h1>
+              </div>
+            </div>
+            <div className="text-center">
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                Milestones that define my professional journey
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-20 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto">
+            <div className="max-w-2xl mx-auto">
+              <div className="text-center mb-5">
+                <h1 className="text-3xl lg:text-4xl font-bold">
+                  When I'm Not Coding
+                </h1>
+              </div>
+            </div>
+            <div className="text-center">
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                Life is about balance - here's what I enjoy outside of work
+              </p>
+            </div>
+          </div>
+        </section>
     </div>
   );
 };
