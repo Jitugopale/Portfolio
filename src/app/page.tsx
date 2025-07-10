@@ -10,13 +10,13 @@ import { Card, CardContent } from "@/components/ui/card";
 export default function Home() {
   return (
     <>
-      <div className="main min-h-screen">
+      <div className="main min-h-screen mt-20">
         {/* Hero Section */}
         <section className="max-w-7xl mx-auto pt-12 px-4 lg:my-4">
           <div className="flex flex-col-reverse lg:flex-row items-center lg:items-start gap-12">
             {/* Text Info Section */}
             <div className="lg:w-1/2">
-              <h1 className="text-lg text-muted-foreground">Hello, I&apos;m</h1>
+              <h1 className="text-lg text-muted-foreground font-medium">Hello, I&apos;m</h1>
               <div className="mt-2 mb-3">
                 <h2 className="text-5xl lg:text-7xl font-bold gradient-text">
                   Jitesh Gopale
@@ -54,7 +54,7 @@ export default function Home() {
               <div className="absolute"></div>
               <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-white shadow-2xl">
                 <Image
-                  src="/download.jpg"
+                  src="./download.jpg"
                   alt="Jitesh Gopale"
                   fill
                   className="object-cover"
