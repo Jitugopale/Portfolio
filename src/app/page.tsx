@@ -54,7 +54,7 @@ export default function Home() {
               <div className="absolute"></div>
               <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-white shadow-2xl">
                 <Image
-                  src="/download.jpg"
+                  src="./download.jpg"
                   alt="Jitesh Gopale"
                   fill
                   className="object-cover"
