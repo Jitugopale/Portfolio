@@ -60,9 +60,9 @@ const AboutPage = () => {
           <h2 className="text-3xl font-bold text-center mb-12">My Story</h2>
         </div>
         <div className="space-y-6 text-lg leading-relaxed px-4">
-          <p>I'm a passionate frontend developer with a love for creating beautiful, functional web experiences. My journey began with curiosity about how websites work, and it has evolved into a career dedicated to crafting user-centric applications that make a real difference in people's lives.</p>
+          <p>I&apos;m a passionate frontend developer with a love for creating beautiful, functional web experiences. My journey began with curiosity about how websites work, and it has evolved into a career dedicated to crafting user-centric applications that make a real difference in people&apos;s lives.</p>
           <p>I specialize in the React ecosystem, including Next.js for full-stack applications, Redux for state management, and modern JavaScript/TypeScript. I believe in writing clean, maintainable code and staying up-to-date with the latest industry trends and best practices.</p>
-          <p>When I'm not coding, you'll find me exploring new technologies, contributing to open source projects, or sharing knowledge with the developer community. I'm always eager to learn and grow, both personally and professionally.</p>
+          <p>When I&apos;m not coding, you&apos;ll find me exploring new technologies, contributing to open source projects, or sharing knowledge with the developer community. I&apos;m always eager to learn and grow, both personally and professionally.</p>
         </div>
         </div>
       </section>
@@ -106,13 +106,13 @@ const AboutPage = () => {
             <div className="max-w-2xl mx-auto">
               <div className="text-center mb-5">
                 <h1 className="text-3xl lg:text-4xl font-bold">
-                  When I'm Not Coding
+                  When I&apos;m Not Coding
                 </h1>
               </div>
             </div>
             <div className="text-center">
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                Life is about balance - here's what I enjoy outside of work
+                Life is about balance - here&apos;s what I enjoy outside of work
               </p>
             </div>
           </div>

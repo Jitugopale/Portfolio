@@ -11,7 +11,7 @@ const ContactPage = () => {
         </div>
         <div className="text-center">
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Let's work together on your next project. I'm always excited to
+            Let&apos;s work together on your next project. I&apos;m always excited to
             discuss new opportunities and creative challenges.
           </p>
         </div>

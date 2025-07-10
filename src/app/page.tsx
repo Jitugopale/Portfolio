@@ -21,7 +21,7 @@ export default function Home() {
           <div className="flex flex-col-reverse lg:flex-row items-center lg:items-start gap-12">
             {/* Text Info Section */}
             <div className="lg:w-1/2">
-              <h1 className="text-lg text-muted-foreground">Hello, I'm</h1>
+              <h1 className="text-lg text-muted-foreground">Hello, I&apos;m</h1>
               <div className="mt-2 mb-3">
                 <h2 className="text-5xl lg:text-7xl font-bold gradient-text">
                   Jitesh Gopale
@@ -214,8 +214,8 @@ export default function Home() {
             </div>
             <div className="text-center">
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                I'm always interested in new opportunities and exciting
-                projects. Let's discuss how we can bring your ideas to life.
+                I&apos;m always interested in new opportunities and exciting
+                projects. Let&apos;s discuss how we can bring your ideas to life.
               </p>
             </div>
             <div className="flex justify-center gap-4 mt-8">
