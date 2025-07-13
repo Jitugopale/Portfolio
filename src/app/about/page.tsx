@@ -283,8 +283,7 @@ const AboutPage = () => {
               Life is about balance - here&apos;s what I enjoy outside of work
             </p>
           </div>
-        </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mt-16">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mt-16">
           {interests.map((interest, index) => (
             <div key={index}>
               <Card>
@@ -295,6 +294,7 @@ const AboutPage = () => {
               </Card>
             </div>
           ))}
+        </div>
         </div>
       </section>
     </div>
