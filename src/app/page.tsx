@@ -29,9 +29,7 @@ export default function Home() {
               </div>
               <div>
                 <p className="text-lg text-muted-foreground">
-                  Crafting beautiful, responsive web experiences with React,
-                  Next.js, and modern JavaScript. Passionate about creating
-                  user-centric applications that make a difference.
+                  Building scalable, full-stack web applications with React, Next.js, Node.js, and SQL. Passionate about delivering end-to-end solutions that are fast, secure, and user-focused.
                 </p>
               </div>
               <div className="mt-7 flex gap-4">
@@ -70,7 +68,7 @@ export default function Home() {
             <Card className="bg-white dark:bg-gray-800 shadow-lg">
               <CardContent className="flex flex-col items-center">
                 <div className="font-bold text-2xl lg:text-3xl text-blue-500">
-                  5+
+                  1+
                 </div>
                 <div className="text-md text-muted-foreground mt-1">
                   Years Experience
@@ -80,7 +78,7 @@ export default function Home() {
             <Card>
               <CardContent className="flex flex-col items-center">
                 <div className="font-bold text-2xl lg:text-3xl text-blue-500">
-                  50+
+                  5+
                 </div>
                 <div className="text-md text-muted-foreground mt-1">
                   Projects Completed
@@ -90,7 +88,7 @@ export default function Home() {
             <Card>
               <CardContent className="flex flex-col items-center">
                 <div className="font-bold text-2xl lg:text-3xl text-blue-500">
-                  25+
+                  1+
                 </div>
                 <div className="text-md text-muted-foreground mt-1">
                   Happy Clients
@@ -130,52 +128,46 @@ export default function Home() {
                 React
               </div>
               <div className="bg-secondary py-2 px-4 font-semibold text-md rounded-full">
-                React
+                Next.js
               </div>
               <div className="bg-secondary py-2 px-4 font-semibold text-md rounded-full">
-                React
+                JavaScript
               </div>
               <div className="bg-secondary py-2 px-4 font-semibold text-md rounded-full">
-                React
+                TypeScript
               </div>
               <div className="bg-secondary py-2 px-4 font-semibold text-md rounded-full">
-                React
+                Redux
               </div>
               <div className="bg-secondary py-2 px-4 font-semibold text-md rounded-full">
-                React
+                Tailwind CSS
               </div>
               <div className="bg-secondary py-2 px-4 font-semibold text-md rounded-full">
-                React
+                Node.js
               </div>
               <div className="bg-secondary py-2 px-4 font-semibold text-md rounded-full">
-                React
+                Prisma
               </div>
               <div className="bg-secondary py-2 px-4 font-semibold text-md rounded-full">
-                React
+                SQL
               </div>
               <div className="bg-secondary py-2 px-4 font-semibold text-md rounded-full">
-                React
+                MongoDB
               </div>
               <div className="bg-secondary py-2 px-4 font-semibold text-md rounded-full">
-                React
+                VectorDB
               </div>
               <div className="bg-secondary py-2 px-4 font-semibold text-md rounded-full">
-                React
+                LLM Models
               </div>
               <div className="bg-secondary py-2 px-4 font-semibold text-md rounded-full">
-                React
+                AI Tools 
               </div>
               <div className="bg-secondary py-2 px-4 font-semibold text-md rounded-full">
-                React
+                OpenAI 
               </div>
               <div className="bg-secondary py-2 px-4 font-semibold text-md rounded-full">
-                React
-              </div>
-              <div className="bg-secondary py-2 px-4 font-semibold text-md rounded-full">
-                React
-              </div>
-              <div className="bg-secondary py-2 px-4 font-semibold text-md rounded-full">
-                React
+                Docker
               </div>
             </div>
           </div>

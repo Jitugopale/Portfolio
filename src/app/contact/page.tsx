@@ -204,28 +204,42 @@ const ContactPage = () => {
                   </CardHeader>
                   <CardContent className="space-y-4">
                     <Card className="cursor-pointer p-3 hover:bg-gray-50">
-                        <div className="flex gap-4 items-center">
-                          <div>
-                            <Github className="h-6 w-6" />
+                      <CardContent>
+                        <a href="https://github.com" target="_blank">
+                          <div className="flex gap-4 items-center">
+                            <div>
+                              <Github className="h-6 w-6" />
+                            </div>
+                            <div>
+                              <div className="font-medium text-lg">Github</div>
+                              <div className="text-sm text-muted-foreground font-medium">
+                                @Jitugopale
+                              </div>
+                            </div>
                           </div>
-                          <div>
-                            <div className="font-medium text-lg">Github</div>
-                            <div className="text-sm text-muted-foreground font-medium">@alexjohnson</div>
-                          </div>
-                        </div>
-                    </Card>
-                     <Card className="cursor-pointer p-5">
-                        <div className="flex gap-4 items-center">
-                          <div>
-                            <Linkedin className="h-6 w-6" />
-                          </div>
-                          <div className="space-y-1">
-                            <div className="font-medium text-lg">LinkedIn</div>
-                            <div className="text-sm text-muted-foreground font-medium">Alex Johnson</div>
-                          </div>
-                        </div>
+                        </a>
+                      </CardContent>
                     </Card>
                     <Card className="cursor-pointer p-5">
+                      <CardContent>
+                        <a href="https://linkedin.com/in/jitesh-gopale-144565242" target="_blank">
+                          <div className="flex gap-4 items-center">
+                            <div>
+                              <Linkedin className="h-6 w-6" />
+                            </div>
+                            <div className="space-y-1">
+                              <div className="font-medium text-lg">
+                                LinkedIn
+                              </div>
+                              <div className="text-sm text-muted-foreground font-medium">
+                                Jitesh Gopale
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </CardContent>
+                    </Card>
+                    {/* <Card className="cursor-pointer p-5">
                         <div className="flex gap-4 items-center">
                           <div>
                             <Github className="h-6 w-6" />
@@ -235,7 +249,7 @@ const ContactPage = () => {
                             <div className="text-sm text-muted-foreground font-medium">@alexjohnson</div>
                           </div>
                         </div>
-                    </Card>
+                    </Card> */}
                   </CardContent>
                 </Card>
               </div>

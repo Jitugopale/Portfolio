@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
-import {  Award, BookOpen, Code, Database } from "lucide-react";
+import {  Award, BookOpen, Code, Database, Zap } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Certificate } from "crypto";
 
@@ -12,8 +12,14 @@ const SkillsPage = () => {
       icon: <Code className="h-6 w-6" />,
       color: "text-blue-500",
       skills: [
-        { name: "HTML", level: "90%" },
-        { name: "CSS", level: "70%" },
+        { name: "React", level: "90%" },
+        { name: "Next.js", level: "70%" },
+        { name: "JavaScript", level: "70%" },
+        { name: "TypeScript", level: "80%" },
+        { name: "HTML/CSS", level: "70%" },
+        { name: "Tailwind CSS", level: "90%" },
+        { name: "Bootstrap", level: "60%" },
+        { name: "Shadcn UI", level: "60%" },
       ],
     },
     {
@@ -23,6 +29,34 @@ const SkillsPage = () => {
       skills: [
         { name: "Redux", level: "50%" },
         { name: "Redux Toolkit", level: "50%" },
+        { name: "Context API", level: "50%" },
+
+      ],
+    },
+    {
+      title: "Backend Development",
+      icon: <Database className="h-6 w-6" />,
+      color: "text-green-500",
+      skills: [
+        { name: "Node JS", level: "50%" },
+        { name: "Express JS", level: "50%" },
+        { name: "Prisma", level: "50%" },
+        { name: "MySQL", level: "50%" },
+        { name: "MongoDB", level: "50%" },
+        { name: "VectorDB", level: "50%" },
+      ],
+    },
+    {
+      title: "Tools & Others",
+      icon: <Zap className="h-6 w-6" />,
+      color: "text-green-500",
+      skills: [
+        { name: "Git/GitHub", level: "50%" },
+        { name: "Vite", level: "50%" },
+        { name: "REST APIs", level: "50%" },
+        { name: "OpenAPI", level: "50%" },
+        { name: "LLM", level: "50%" },
+        { name: "Docker", level: "50%" },
       ],
     },
   ];
@@ -69,7 +103,7 @@ const SkillsPage = () => {
             <Card>
               <CardContent className="flex flex-col items-center">
                 <div className="font-bold text-2xl lg:text-3xl text-blue-500">
-                  5+
+                  1+
                 </div>
                 <div className="text-md text-muted-foreground mt-1">
                   Years Experience
@@ -79,7 +113,7 @@ const SkillsPage = () => {
             <Card>
               <CardContent className="flex flex-col items-center">
                 <div className="font-bold text-2xl lg:text-3xl text-blue-500">
-                  50+
+                  5+
                 </div>
                 <div className="text-md text-muted-foreground mt-1">
                   Projects

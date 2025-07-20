@@ -70,24 +70,32 @@ const AboutPage = () => {
           </div>
           <div className="space-y-6 text-lg leading-relaxed px-4">
             <p>
-              I&apos;m a passionate frontend developer with a love for creating
-              beautiful, functional web experiences. My journey began with
-              curiosity about how websites work, and it has evolved into a
-              career dedicated to crafting user-centric applications that make a
-              real difference in people&apos;s lives.
+              I&apos;m a passionate full stack developer with a love for
+              building beautiful, functional, and scalable web experiences. What
+              started as a curiosity about how websites work has evolved into a
+              career focused on creating user-centric applications that solve
+              real-world problems and deliver value. From design to deployment,
+              I enjoy crafting seamless digital experiences that users enjoy and
+              trust.
             </p>
             <p>
               I specialize in the React ecosystem, including Next.js for
-              full-stack applications, Redux for state management, and modern
-              JavaScript/TypeScript. I believe in writing clean, maintainable
-              code and staying up-to-date with the latest industry trends and
-              best practices.
+              full-stack development, paired with Node.js and Prisma on the
+              backend. I have strong experience with Redux for state management,
+              Tailwind CSS for styling, and tools like Postman for API testing.
+              I&apos;m also focused on backend security, efficient database
+              management, and deploying robust applications with modern DevOps
+              practices. My goal is always to build clean, maintainable, and
+              production-ready solutions.
             </p>
             <p>
-              When I&apos;m not coding, you&apos;ll find me exploring new
-              technologies, contributing to open source projects, or sharing
-              knowledge with the developer community. I&apos;m always eager to
-              learn and grow, both personally and professionally.
+              When I&apos;m not writing code, I&apos;m exploring new
+              technologies, contributing to open-source projects, or sharing
+              knowledge with the developer community. I&apos;m a firm believer
+              in continuous learning and always strive to stay up-to-date with
+              the latest tools, frameworks, and best practices in full stack
+              development. Whether it&apos;s frontend UI or backend logic, I
+              enjoy being involved in every part of the development process.
             </p>
           </div>
         </div>
@@ -113,15 +121,15 @@ const AboutPage = () => {
                 <div className="flex flex-wrap justify-between">
                   <div>
                     <h2 className="text-2xl lg:text-3xl font-bold mb-1 md:mb-2">
-                      Senior Frontend Developer
+                      Software Developer
                     </h2>
                     <h4 className="text-xl font-semibold text-blue-600">
-                      TechCorp Solutions
+                      CancerMitr
                     </h4>
                   </div>
                   <div className="mt-5 md:mt-0">
                     <Badge variant="outline" className="text-md">
-                      2022 - Present
+                      2025 - Present
                     </Badge>
                   </div>
                 </div>
@@ -129,9 +137,12 @@ const AboutPage = () => {
               <CardContent>
                 <div className="mb-4">
                   <p className="text-muted-foreground text-lg font-semibold">
-                    Leading frontend development for enterprise applications
-                    using React and Next.js. Mentoring junior developers and
-                    establishing best practices.
+                    Working on backend development for web applications using
+                    Node.js, Prisma, and MySQL. Responsible for building secure
+                    RESTful APIs, designing efficient database schemas, and
+                    integrating backend logic to support scalable full-stack
+                    features. Collaborating with the frontend team to deliver
+                    seamless end-to-end solutions.
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-4">
@@ -153,15 +164,15 @@ const AboutPage = () => {
                 <div className="flex flex-wrap justify-between">
                   <div>
                     <h2 className="text-2xl lg:text-3xl font-bold mb-1 md:mb-2">
-                      Senior Frontend Developer
+                      Web Developer
                     </h2>
                     <h4 className="text-xl font-semibold text-blue-600">
-                      TechCorp Solutions
+                      AVS Insotech Pvt Ltd
                     </h4>
                   </div>
                   <div className="mt-5 md:mt-0">
                     <Badge variant="outline" className="text-md">
-                      2022 - Present
+                      2024 - 2025
                     </Badge>
                   </div>
                 </div>
@@ -169,9 +180,12 @@ const AboutPage = () => {
               <CardContent>
                 <div className="mb-4">
                   <p className="text-muted-foreground text-lg font-semibold">
-                    Leading frontend development for enterprise applications
-                    using React and Next.js. Mentoring junior developers and
-                    establishing best practices.
+                    Worked on full-stack web development using React for the
+                    frontend and Node.js for the backend. Built and integrated
+                    RESTful APIs, collaborated across teams to ensure smooth
+                    deployment, and performed rigorous testing in both UAT and
+                    production environments to deliver reliable, scalable web
+                    solutions.
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-4">
@@ -208,13 +222,13 @@ const AboutPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-16">
             <Card>
               <CardContent>
-                <div className="flex justify-center items-center">
+                <div className="flex justify-start items-center mx-5">
                   <div>
                     <Award className="h-6 w-6 text-blue-700 mr-3.5" />
                   </div>
                   <div>
                     <h1 className="font-medium text-lg">
-                      Led development of 3 major product launches
+                      Secured 3rd rank in 12th grade at school level
                     </h1>
                   </div>
                 </div>
@@ -223,13 +237,13 @@ const AboutPage = () => {
 
             <Card>
               <CardContent>
-                <div className="flex justify-center items-center">
+                <div className="flex justify-start items-center mx-5">
                   <div>
                     <Award className="h-6 w-6 text-blue-700 mr-3.5" />
                   </div>
                   <div>
                     <h1 className="font-medium text-lg">
-                      Led development of 3 major product launches
+                      Ranked 1st in 7th semester at college level
                     </h1>
                   </div>
                 </div>
@@ -238,13 +252,13 @@ const AboutPage = () => {
 
             <Card>
               <CardContent>
-                <div className="flex justify-center items-center">
+                <div className="flex justify-start items-center mx-5">
                   <div>
                     <Award className="h-6 w-6 text-blue-700 mr-3.5" />
                   </div>
                   <div>
                     <h1 className="font-medium text-lg">
-                      Led development of 3 major product launches
+                      Completed MERN Stack Developer Certification
                     </h1>
                   </div>
                 </div>
@@ -253,13 +267,13 @@ const AboutPage = () => {
 
             <Card>
               <CardContent>
-                <div className="flex justify-center items-center">
+                <div className="flex justify-start items-center mx-5">
                   <div>
                     <Award className="h-6 w-6 text-blue-700 mr-3.5" />
                   </div>
                   <div>
                     <h1 className="font-medium text-lg">
-                      Led development of 3 major product launches
+                      Contributed to 3+ open source projects
                     </h1>
                   </div>
                 </div>
@@ -284,17 +298,17 @@ const AboutPage = () => {
             </p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mt-16">
-          {interests.map((interest, index) => (
-            <div key={index}>
-              <Card>
-                <CardContent>
-                  <div>{interest.icon}</div>
-                  <div>{interest.name}</div>
-                </CardContent>
-              </Card>
-            </div>
-          ))}
-        </div>
+            {interests.map((interest, index) => (
+              <div key={index}>
+                <Card>
+                  <CardContent>
+                    <div>{interest.icon}</div>
+                    <div>{interest.name}</div>
+                  </CardContent>
+                </Card>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </div>
