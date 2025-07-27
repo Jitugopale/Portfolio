@@ -147,13 +147,34 @@ const AboutPage = () => {
                 </div>
                 <div className="flex flex-wrap gap-4">
                   <div className="bg-secondary py-1 px-4 font-semibold text-md rounded-full">
-                    React
+                    Next.js
                   </div>
                   <div className="bg-secondary py-1 px-4 font-semibold text-md rounded-full">
-                    React
+                    Tailwind CSS
                   </div>
                   <div className="bg-secondary py-1 px-4 font-semibold text-md rounded-full">
-                    React
+                    Redux
+                  </div>
+                  <div className="bg-secondary py-1 px-4 font-semibold text-md rounded-full">
+                    Prisma
+                  </div>
+                  <div className="bg-secondary py-1 px-4 font-semibold text-md rounded-full">
+                    Node.js
+                  </div>
+                  <div className="bg-secondary py-1 px-4 font-semibold text-md rounded-full">
+                    MySQL
+                  </div>
+                  <div className="bg-secondary py-1 px-4 font-semibold text-md rounded-full">
+                    Vector DB
+                  </div>
+                  <div className="bg-secondary py-1 px-4 font-semibold text-md rounded-full">
+                    Open AI
+                  </div>
+                  <div className="bg-secondary py-1 px-4 font-semibold text-md rounded-full">
+                    Docker
+                  </div>
+                  <div className="bg-secondary py-1 px-4 font-semibold text-md rounded-full">
+                    Redis
                   </div>
                 </div>
               </CardContent>
@@ -193,10 +214,22 @@ const AboutPage = () => {
                     React
                   </div>
                   <div className="bg-secondary py-1 px-4 font-semibold text-md rounded-full">
-                    React
+                    Bootstrap
                   </div>
                   <div className="bg-secondary py-1 px-4 font-semibold text-md rounded-full">
-                    React
+                    Node.js
+                  </div>
+                  <div className="bg-secondary py-1 px-4 font-semibold text-md rounded-full">
+                    SQL
+                  </div>
+                  <div className="bg-secondary py-1 px-4 font-semibold text-md rounded-full">
+                    API Testing
+                  </div>
+                  <div className="bg-secondary py-1 px-4 font-semibold text-md rounded-full">
+                    IIS Server
+                  </div>
+                  <div className="bg-secondary py-1 px-4 font-semibold text-md rounded-full">
+                    Deployment
                   </div>
                 </div>
               </CardContent>
