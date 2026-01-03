@@ -44,6 +44,7 @@ const SkillsPage = () => {
         { name: "MySQL", level: "50%" },
         { name: "MongoDB", level: "50%" },
         { name: "VectorDB", level: "50%" },
+        { name: "LangChain", level: "50%" },
       ],
     },
     {
@@ -57,6 +58,7 @@ const SkillsPage = () => {
         { name: "OpenAPI", level: "50%" },
         { name: "LLM", level: "50%" },
         { name: "Docker", level: "50%" },
+        { name: "Socket.IO", level: "50%" },
       ],
     },
   ];

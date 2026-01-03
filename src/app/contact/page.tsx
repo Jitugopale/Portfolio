@@ -1,3 +1,4 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -10,9 +11,50 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Clock, Github, Linkedin, Mail, Send } from "lucide-react";
-import React from "react";
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 
 const ContactPage = () => {
+const formRef = useRef<HTMLFormElement>(null);
+const [isSending, setIsSending] = useState(false);
+
+const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+  if (!formRef.current) return; 
+
+  if (
+    !formRef.current.from_name.value ||
+    !formRef.current.from_email.value ||
+    !formRef.current.message.value
+  ) {
+    alert("Please fill out all required fields.");
+    setIsSending(false);
+    return;
+  }
+
+  setIsSending(true);
+
+  emailjs
+    .sendForm(
+      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+      formRef.current,
+      process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+    )
+    .then(
+      () => {
+        alert("Message sent successfully");
+        formRef.current?.reset();
+        setIsSending(false);
+      },
+      (error) => {
+        console.error(error);
+        alert("Failed to send");
+        setIsSending(false);
+      }
+    );
+};
+
   return (
     <div className="contact">
       <section className="max-w-7xl mx-auto pt-20 pb-20 px-5 sm:px-6 lg:px-8">
@@ -109,35 +151,36 @@ const ContactPage = () => {
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <form>
+                  <form ref={formRef} onSubmit={sendEmail}>
                     <div className="grid md:grid-cols-2 gap-4 mb-5">
                       <div className="space-y-2">
                         <Label>
                           Name<span className="text-red-500">*</span>
                         </Label>
-                        <Input placeholder="Your full name" />
+                        <Input name="from_name" placeholder="Your full name" required />
                       </div>
                       <div className="space-y-2">
                         <Label>
                           Email<span className="text-red-500">*</span>
                         </Label>
-                        <Input placeholder="your.email@example.com" />
+                        <Input name="from_email" type="email" placeholder="your.email@example.com" required />
                       </div>
                     </div>
                     <div className="space-y-2 mb-5">
-                      <Label>Subject</Label>
-                      <Input placeholder="Your subject" />
+                      <Label>Subject<span className="text-red-500">*</span></Label>
+                      <Input name="subject" placeholder="Your subject" required />
                     </div>
                     <div className="space-y-2 mb-5">
                       <Label>
                         Message<span className="text-red-500">*</span>
                       </Label>
-                      <Textarea rows={5} placeholder="Your message..." />
+                      <Textarea name="message" rows={5} placeholder="Your message..." required />
                     </div>
-                    <Button type="submit" className="w-full" size="lg">
-                      <Send className="h-4 w-4" />
-                      Send Message
-                    </Button>
+                    <Button type="submit" className="w-full cursor-pointer" size="lg" disabled={isSending}>
+  <Send className="h-4 w-4 mr-2" />
+  {isSending ? "Sending..." : "Send Message"}
+</Button>
+
                   </form>
                 </CardContent>
               </Card>

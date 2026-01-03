@@ -63,7 +63,7 @@ const Navigation = () => {
               Skills
             </Link>
             <Link
-              href="projects"
+              href="/projects"
               className="transition-colors hover:text-blue-500"
             >
               Projects
@@ -112,23 +112,23 @@ const Navigation = () => {
             //   <Link href="#" className='transition-colors hover:text-blue-500'>Projects</Link>
             //   <Link href="#" className='transition-colors hover:text-blue-500'>Contact</Link>
             // </ul>
-            <ul className="flex flex-col absolute shadow-lg top-16 left-0 bg-white dark:bg-gray-800 w-full md:hidden gap-7 text-sm font-medium cursor-pointer">
+            <ul className="px-10 pt-5 pb-3 space-y-1 flex flex-col absolute shadow-lg top-16 left-0 bg-white dark:bg-gray-800 w-full md:hidden gap-7 text-sm font-medium cursor-pointer">
               <Link
-                href="#"
-                className="transition-colors hover:text-blue-500 text-red-500"
+                href="/"
+                className="transition-colors hover:text-blue-500 text-blue-500"
               >
                 Home
               </Link>
-              <Link href="#" className="transition-colors hover:text-blue-500">
+              <Link href="/about" className="transition-colors hover:text-blue-500">
                 About
               </Link>
-              <Link href="#" className="transition-colors hover:text-blue-500">
+              <Link href="/skills" className="transition-colors hover:text-blue-500">
                 Skills
               </Link>
-              <Link href="#" className="transition-colors hover:text-blue-500">
+              <Link href="/projects" className="transition-colors hover:text-blue-500">
                 Projects
               </Link>
-              <Link href="#" className="transition-colors hover:text-blue-500">
+              <Link href="/contact" className="transition-colors hover:text-blue-500">
                 Contact
               </Link>
             </ul>
