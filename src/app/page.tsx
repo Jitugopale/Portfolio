@@ -17,7 +17,8 @@ import { Badge } from "@/components/ui/badge";
 export default function Home() {
   return (
     <>
-      <div className="main min-h-screen mt-20">
+      <div className="main min-h-screen mt-20 bg-background">
+        {" "}
         {/* Hero Section */}
         <section className="max-w-7xl mx-auto pt-12 px-4 lg:my-4">
           <div className="flex flex-col-reverse lg:flex-row items-center lg:items-start gap-12">
@@ -106,9 +107,9 @@ export default function Home() {
               {/* Glow */}
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full opacity-20 animate-pulse" />
 
-              <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-white shadow-2xl">
+              <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-white dark:border-gray-700 shadow-2xl">
                 <Image
-                  src="./download.jpg"
+                  src="/download.jpg"
                   alt="Jitesh Gopale"
                   fill
                   className="object-cover"
@@ -118,8 +119,8 @@ export default function Home() {
             </motion.div>
           </div>
         </section>
-
-        <section className="mt-32 py-6 bg-gray-50">
+        <section className="mt-32 py-6 bg-gray-50 dark:bg-gray-900">
+          {" "}
           <div className="max-w-7xl mx-auto p-6 mt-12">
             <motion.div
               initial={{ opacity: 0, y: 50 }}
@@ -141,7 +142,8 @@ export default function Home() {
                   transition={{ delay: index * 0.1 }}
                   viewport={{ once: true }}
                 >
-                  <Card className="bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-shadow">
+                  <Card className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-lg hover:shadow-xl transition-shadow">
+                    {" "}
                     <CardContent className="flex flex-col items-center">
                       <div className="font-bold text-2xl lg:text-3xl text-blue-500">
                         {stat.value}
@@ -156,7 +158,6 @@ export default function Home() {
             </motion.div>
           </div>
         </section>
-
         <section className="py-20 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             {/* Heading */}
@@ -227,8 +228,8 @@ export default function Home() {
             </motion.div>
           </div>
         </section>
-
-        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900">
+          {" "}
           <div className="max-w-7xl mx-auto">
             {/* Heading */}
             <motion.div
@@ -348,7 +349,6 @@ export default function Home() {
             </motion.div>
           </div>
         </section>
-
         <section className="py-20 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <div className="max-w-2xl mx-auto text-center">

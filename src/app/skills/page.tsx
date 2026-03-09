@@ -1,7 +1,10 @@
+"use client";
+
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
-import {  Award, BookOpen, Code, Database, Zap } from "lucide-react";
+import { Award, BookOpen, Code, Database, Zap } from "lucide-react";
+import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 
 const SkillsPage = () => {
@@ -29,7 +32,6 @@ const SkillsPage = () => {
         { name: "Redux", level: "50%" },
         { name: "Redux Toolkit", level: "50%" },
         { name: "Context API", level: "50%" },
-
       ],
     },
     {
@@ -61,36 +63,54 @@ const SkillsPage = () => {
       ],
     },
   ];
-  
+
   const Certifications = [
     {
+      id: 1,
       name: "Meta Front-End Developer",
       year: 2023,
-      issue:"Meta (Facebook)",
+      issue: "Meta (Facebook)",
       description: "Complete frontend development specialization",
-
     },
     {
-      name: "Meta Front-End Developer",
-      year: 2023,
-      issue:"Meta (Facebook)",
-      description: "Complete frontend development specialization",
-
-    }
-  ]
+      id: 2,
+      name: "Another Certification",
+      year: 2024,
+      issue: "Coursera",
+      description: "Advanced frontend development",
+    },
+  ];
   return (
     <div className="skills">
       <section className="max-w-7xl mx-auto pt-20 pb-20 px-4 sm:px-6 lg:px-8">
-        <div className="text-center font-bold mb-6 text-4xl lg:text-6xl">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-center font-bold mb-6 text-4xl lg:text-6xl"
+        >
           <h1>Skills & Expertise</h1>
-        </div>
-        <div className="text-center">
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="text-center"
+        >
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Technologies and tools I use to bring ideas to life
           </p>
-        </div>
+        </motion.div>
+
         <section className="py-6">
-          <div className="max-w-7xl grid grid-cols-2 md:grid-cols-4 gap-8 p-2 lg:p-6 mt-12 mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="max-w-7xl grid grid-cols-2 md:grid-cols-4 gap-8 p-2 lg:p-6 mt-12 mx-auto"
+          >
             <Card className="bg-white dark:bg-gray-800 shadow-lg">
               <CardContent className="flex flex-col items-center">
                 <div className="font-bold text-2xl lg:text-3xl text-blue-500">
@@ -101,6 +121,7 @@ const SkillsPage = () => {
                 </div>
               </CardContent>
             </Card>
+
             <Card className="bg-white dark:bg-gray-800 shadow-lg">
               <CardContent className="flex flex-col items-center">
                 <div className="font-bold text-2xl lg:text-3xl text-blue-500">
@@ -111,6 +132,7 @@ const SkillsPage = () => {
                 </div>
               </CardContent>
             </Card>
+
             <Card className="bg-white dark:bg-gray-800 shadow-lg">
               <CardContent className="flex flex-col items-center">
                 <div className="font-bold text-2xl lg:text-3xl text-blue-500">
@@ -121,6 +143,7 @@ const SkillsPage = () => {
                 </div>
               </CardContent>
             </Card>
+
             <Card className="bg-white dark:bg-gray-800 shadow-lg">
               <CardContent className="flex flex-col items-center">
                 <div className="font-bold text-2xl lg:text-3xl text-blue-500">
@@ -131,39 +154,67 @@ const SkillsPage = () => {
                 </div>
               </CardContent>
             </Card>
-          </div>
+          </motion.div>
         </section>
       </section>
 
-      <section className="bg-gray-50 pt-20 pb-20">
-        <div className="max-w-7xl mx-auto">
+      <section className="bg-gray-50 dark:bg-gray-900 pt-20 pb-20">
+        {" "}
+        <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {skillsCategories.map((category, index) => (
-              <Card key={index}>
-                <CardHeader>
-                  <div className="flex gap-2 items-center">
-                    <div className={`${category.color}`}>{category.icon}</div>
-                    <div>
-                      <h1>{category.title}</h1>
-                    </div>
-                  </div>
-                  {category.skills.map((skills, skillIndex) => (
-                    <div key={skillIndex}>
-                      <div className="flex flex-col space-y-6">
-                        <div>
-                          <div className="flex justify-between">
-                            <CardTitle>{skills.name}</CardTitle>
-                            <span className="text-muted-foreground">
-                              {skills.level}
-                            </span>
-                          </div>
-                          <Progress value={parseInt(skills.level)} />
-                        </div>
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                whileHover={{ y: -6 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+              >
+                <Card className="bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 dark:border-gray-700">
+                  <CardHeader>
+                    <div className="flex gap-3 items-center mb-4">
+                      <div className={`text-xl ${category.color}`}>
+                        {category.icon}
                       </div>
+
+                      <h2 className="text-lg font-semibold tracking-wide">
+                        {category.title}
+                      </h2>
                     </div>
-                  ))}
-                </CardHeader>
-              </Card>
+
+                    <div className="flex flex-col space-y-5">
+                      {category.skills.map((skill, skillIndex) => (
+                        <motion.div
+                          key={skillIndex}
+                          initial={{ opacity: 0, x: -30 }}
+                          whileInView={{ opacity: 1, x: 0 }}
+                          viewport={{ once: true }}
+                          transition={{ delay: skillIndex * 0.05 }}
+                        >
+                          <div>
+                            <div className="flex justify-between items-center mb-1">
+                              <span className="text-sm font-medium tracking-wide">
+                                {skill.name}
+                              </span>
+
+                              <span className="text-xs font-semibold text-blue-500">
+                                {skill.level}
+                              </span>
+                            </div>
+
+                            {/* Progress Bar */}
+                            <Progress
+                              value={parseInt(skill.level)}
+                              className="h-2 bg-gray-200 dark:bg-gray-700"
+                            />
+                          </div>
+                        </motion.div>
+                      ))}
+                    </div>
+                  </CardHeader>
+                </Card>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -171,48 +222,91 @@ const SkillsPage = () => {
 
       <section>
         <div className="max-w-7xl mx-auto pt-20 pb-20 px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
             <div className="text-center mb-6 text-3xl lg:text-4xl font-bold">
               <h1>Certifications & Learning</h1>
             </div>
+
             <div className="text-center">
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
                 Continuous learning and professional development
               </p>
             </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 mt-20 gap-8">
-                {Certifications.map((Certificate,index)=>(
-                    <Card key={index}>
-            <CardHeader>
-              <div className="flex gap-4 items-start">
-                <div className="bg-primary/10 p-2 rounded-lg"><Award className="h-6 w-6 text-blue-500"/></div>
-                <div>
-                  <h1 className="text-lg font-semibold">{Certificate.name}</h1>
-                  <div className="flex items-center gap-2 text-sm text-muted-foreground mt-2">
-                    <Badge variant="secondary">{Certificate.issue}</Badge>
-                    <Badge variant="outline">{Certificate.year}</Badge>
-                  </div>
-                  <div className="mt-2">
-                    <p className="text-muted-foreground text-sm font-semibold">{Certificate.description}</p>
-                  </div>
-                </div>
-              </div>
-            </CardHeader>
-          </Card>
-                ))}
-        
-        </div>
-        </div>
+          </motion.div>
 
-      
+          <div className="grid grid-cols-1 md:grid-cols-2 mt-20 gap-8">
+            {Certifications.map((Certificate) => (
+              <motion.div
+                key={Certificate.id}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: Certificate.id * 0.1 }}
+                whileHover={{ y: -6 }}
+              >
+                <Card className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700">
+                  {" "}
+                  <CardHeader>
+                    <div className="flex gap-4 items-start">
+                      <div className="bg-primary/10 p-2 rounded-lg">
+                        <Award className="h-6 w-6 text-blue-500" />
+                      </div>
+
+                      <div>
+                        <h1 className="text-lg font-semibold">
+                          {Certificate.name}
+                        </h1>
+
+                        <div className="flex items-center gap-2 text-sm text-muted-foreground mt-2">
+                          <Badge variant="secondary">{Certificate.issue}</Badge>
+                          <Badge variant="outline">{Certificate.year}</Badge>
+                        </div>
+
+                        <div className="mt-2">
+                          <p className="text-muted-foreground text-sm font-semibold">
+                            {Certificate.description}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </CardHeader>
+                </Card>
+              </motion.div>
+            ))}
+          </div>
+        </div>
       </section>
 
-      <section className="bg-gray-50 pt-20 pb-20 px-4 sm:px-6 lg:px-8">
+      <section className="bg-gray-50 dark:bg-gray-900 pt-20 pb-20 px-4 sm:px-6 lg:px-8">
+        {" "}
         <div className="max-w-4xl mx-auto">
-          <div className="flex flex-col items-center justify-center space-y-6">
-            <div className="bg-primary/10 p-4 rounded-full"><BookOpen className="h-8 w-8 text-blue-500"/></div>
-              <h1 className="text-3xl font-bold mb-6">Continuous Learning</h1>
-              <p className="text-lg text-center text-muted-foreground font-semibold">Technology evolves rapidly, and I believe in staying ahead of the curve. I dedicate time each week to learning new technologies, exploring emerging trends, and contributing to the developer community. Whether it's through online courses, tech conferences, or hands-on experimentation, I'm always expanding my skill set to deliver better solutions.</p>
-          </div>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="flex flex-col items-center justify-center space-y-6"
+          >
+            <div className="bg-primary/10 p-4 rounded-full">
+              <BookOpen className="h-8 w-8 text-blue-500" />
+            </div>
+
+            <h1 className="text-3xl font-bold mb-6">Continuous Learning</h1>
+
+            <p className="text-lg text-center text-muted-foreground font-semibold">
+              Technology evolves rapidly, and I believe in staying ahead of the
+              curve. I dedicate time each week to learning new technologies,
+              exploring emerging trends, and contributing to the developer
+              community. Whether it's through online courses, tech conferences,
+              or hands-on experimentation, I'm always expanding my skill set to
+              deliver better solutions.
+            </p>
+          </motion.div>
         </div>
       </section>
     </div>

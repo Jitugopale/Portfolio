@@ -9,16 +9,16 @@ import React from "react";
 
 const AboutPage = () => {
   const interests = [
-    { name: "Photography", icon: "📸" },
-    { name: "Hiking", icon: "🥾" },
+    { name: "Gyming", icon: "🏋️" },
+    { name: "Video Editing", icon: "🎬" },
+    { name: "Learning New Technologies", icon: "💻" },
+    { name: "Building Side Projects", icon: "🚀" },
     { name: "Gaming", icon: "🎮" },
-    { name: "Reading", icon: "📚" },
-    { name: "Cooking", icon: "👨‍🍳" },
-    { name: "Travel", icon: "✈️" },
+    { name: "Watching Tech Content", icon: "📺" },
   ];
-
   return (
-    <div className="about">
+    <div className="about bg-white dark:bg-gray-950">
+      {" "}
       <section className="max-w-7xl mx-auto pt-20 pb-20 px-4 sm:px-6 lg:px-8">
         {/* Heading Animation */}
         <motion.div
@@ -52,7 +52,7 @@ const AboutPage = () => {
             <CardContent>
               <div className="grid grid-cols-1 md:grid-cols-2">
                 <div className="relative w-65 h-65 mx-auto md:mx-0">
-                  <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-white shadow-2xl">
+                  <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-white dark:border-gray-700 shadow-2xl">
                     <Image
                       src="/download.jpg"
                       alt="Jitesh Gopale"
@@ -88,7 +88,6 @@ const AboutPage = () => {
           </Card>
         </motion.div>
       </section>
-
       <section className="py-20 sm:px-6 lg:px-8 bg-muted/50">
         <div className="max-w-4xl mx-auto">
           <motion.div
@@ -136,7 +135,6 @@ const AboutPage = () => {
           </motion.div>
         </div>
       </section>
-
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           {/* Section Heading */}
@@ -298,8 +296,7 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
-
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900">
         <div className="max-w-7xl mx-auto">
           {/* Section Heading */}
           <motion.div
@@ -415,7 +412,6 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
-
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           {/* Section Heading */}
@@ -445,16 +441,20 @@ const AboutPage = () => {
             {interests.map((interest, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, scale: 0.8 }}
+                initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ delay: index * 0.1 }}
+                transition={{ delay: index * 0.08 }}
                 viewport={{ once: true }}
-                whileHover={{ scale: 1.05 }}
+                whileHover={{ y: -6 }}
+                className="h-full"
               >
-                <Card>
-                  <CardContent>
-                    <div>{interest.icon}</div>
-                    <div>{interest.name}</div>
+                <Card className="h-full flex items-center justify-center text-center p-6 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-lg transition-all duration-300">
+                  <CardContent className="flex flex-col items-center gap-3 p-0">
+                    <div className="text-3xl">{interest.icon}</div>
+
+                    <p className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                      {interest.name}
+                    </p>
                   </CardContent>
                 </Card>
               </motion.div>

@@ -128,3 +128,11 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+
+*{
+transition: background-color .3s ease, color .3s ease;
+}
+
+body {
+  @apply bg-white text-black dark:bg-gray-950 dark:text-white;
+}
