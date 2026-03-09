@@ -248,7 +248,7 @@ const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
                   <CardContent className="space-y-4">
                     <Card className="cursor-pointer p-3 hover:bg-gray-50">
                       <CardContent>
-                        <a href="https://github.com" target="_blank">
+                        <a href="https://github.com/Jitugopale" target="_blank">
                           <div className="flex gap-4 items-center">
                             <div>
                               <Github className="h-6 w-6" />

@@ -3,7 +3,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import {  Award, BookOpen, Code, Database, Zap } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-import { Certificate } from "crypto";
 
 const SkillsPage = () => {
   const skillsCategories = [
@@ -102,7 +101,7 @@ const SkillsPage = () => {
                 </div>
               </CardContent>
             </Card>
-            <Card>
+            <Card className="bg-white dark:bg-gray-800 shadow-lg">
               <CardContent className="flex flex-col items-center">
                 <div className="font-bold text-2xl lg:text-3xl text-blue-500">
                   1+
@@ -112,7 +111,7 @@ const SkillsPage = () => {
                 </div>
               </CardContent>
             </Card>
-            <Card>
+            <Card className="bg-white dark:bg-gray-800 shadow-lg">
               <CardContent className="flex flex-col items-center">
                 <div className="font-bold text-2xl lg:text-3xl text-blue-500">
                   5+
@@ -122,7 +121,7 @@ const SkillsPage = () => {
                 </div>
               </CardContent>
             </Card>
-            <Card>
+            <Card className="bg-white dark:bg-gray-800 shadow-lg">
               <CardContent className="flex flex-col items-center">
                 <div className="font-bold text-2xl lg:text-3xl text-blue-500">
                   4

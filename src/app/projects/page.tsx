@@ -11,104 +11,182 @@ import { ExternalLink, Github, Star } from "lucide-react";
 const ProjectsPage = () => {
   const [filter, setFilter] = useState("all");
 
+  // const projects = [
+  //   {
+  //     id: 1,
+  //     title: 'E-Commerce Platform',
+  //     description: 'Full-stack e-commerce solution with React, Redux, and Node.js. Features include user authentication, payment processing, inventory management, and admin dashboard.',
+  //     image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
+  //     technologies: ['React', 'Redux', 'Node.js', 'MongoDB', 'Stripe'],
+  //     category: 'fullstack',
+  //     featured: true,
+  //     githubUrl: 'https://github.com',
+  //     liveUrl: 'https://example.com',
+  //     year: '2023'
+  //   },
+  //   {
+  //     id: 2,
+  //     title: 'Task Management App',
+  //     description: 'Collaborative task management application built with Next.js and TypeScript. Real-time updates with Socket.io and beautiful drag-and-drop interface.',
+  //     image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
+  //     technologies: ['Next.js', 'TypeScript', 'Socket.io', 'PostgreSQL'],
+  //     category: 'frontend',
+  //     featured: true,
+  //     githubUrl: 'https://github.com',
+  //     liveUrl: 'https://example.com',
+  //     year: '2023'
+  //   },
+  //   {
+  //     id: 3,
+  //     title: 'Weather Dashboard',
+  //     description: 'Beautiful weather application with location-based forecasts, interactive charts, and responsive design. Built with React and Chart.js.',
+  //     image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800',
+  //     technologies: ['React', 'Chart.js', 'Weather API', 'Tailwind CSS'],
+  //     category: 'frontend',
+  //     featured: false,
+  //     githubUrl: 'https://github.com',
+  //     liveUrl: 'https://example.com',
+  //     year: '2023'
+  //   },
+  //   {
+  //     id: 4,
+  //     title: 'Portfolio Website',
+  //     description: 'Responsive portfolio website built with Next.js and modern CSS animations. Optimized for performance and SEO with perfect Lighthouse scores.',
+  //     image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
+  //     technologies: ['Next.js', 'CSS3', 'Framer Motion', 'Vercel'],
+  //     category: 'frontend',
+  //     featured: false,
+  //     githubUrl: 'https://github.com',
+  //     liveUrl: 'https://example.com',
+  //     year: '2022'
+  //   },
+  //   {
+  //     id: 5,
+  //     title: 'Social Media Dashboard',
+  //     description: 'Analytics dashboard for social media management with data visualization, automated reporting, and real-time metrics tracking.',
+  //     image: 'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800',
+  //     technologies: ['React', 'Redux Toolkit', 'D3.js', 'Express', 'MongoDB'],
+  //     category: 'fullstack',
+  //     featured: false,
+  //     githubUrl: 'https://github.com',
+  //     liveUrl: 'https://example.com',
+  //     year: '2022'
+  //   },
+  //   {
+  //     id: 6,
+  //     title: 'Recipe Finder App',
+  //     description: 'Mobile-first recipe application with search functionality, favorites, meal planning, and shopping list generation features.',
+  //     image: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800',
+  //     technologies: ['React', 'Redux', 'Recipe API', 'PWA'],
+  //     category: 'frontend',
+  //     featured: false,
+  //     githubUrl: 'https://github.com',
+  //     liveUrl: 'https://example.com',
+  //     year: '2022'
+  //   },
+  //   {
+  //     id: 7,
+  //     title: 'Real Estate Platform',
+  //     description: 'Comprehensive real estate platform with property listings, virtual tours, mortgage calculator, and agent management system.',
+  //     image: 'https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=800',
+  //     technologies: ['Next.js', 'TypeScript', 'Prisma', 'PostgreSQL', 'AWS'],
+  //     category: 'fullstack',
+  //     featured: false,
+  //     githubUrl: 'https://github.com',
+  //     liveUrl: 'https://example.com',
+  //     year: '2021'
+  //   },
+  //   {
+  //     id: 8,
+  //     title: 'Fitness Tracking App',
+  //     description: 'Personal fitness tracking application with workout plans, progress monitoring, and social features for motivation.',
+  //     image: 'https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=800',
+  //     technologies: ['React', 'Redux', 'Chart.js', 'Firebase'],
+  //     category: 'frontend',
+  //     featured: false,
+  //     githubUrl: 'https://github.com',
+  //     liveUrl: 'https://example.com',
+  //     year: '2021'
+  //   }
+  // ]
   const projects = [
-    {
-      id: 1,
-      title: 'E-Commerce Platform',
-      description: 'Full-stack e-commerce solution with React, Redux, and Node.js. Features include user authentication, payment processing, inventory management, and admin dashboard.',
-      image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['React', 'Redux', 'Node.js', 'MongoDB', 'Stripe'],
-      category: 'fullstack',
-      featured: true,
-      githubUrl: 'https://github.com',
-      liveUrl: 'https://example.com',
-      year: '2023'
-    },
-    {
-      id: 2,
-      title: 'Task Management App',
-      description: 'Collaborative task management application built with Next.js and TypeScript. Real-time updates with Socket.io and beautiful drag-and-drop interface.',
-      image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['Next.js', 'TypeScript', 'Socket.io', 'PostgreSQL'],
-      category: 'frontend',
-      featured: true,
-      githubUrl: 'https://github.com',
-      liveUrl: 'https://example.com',
-      year: '2023'
-    },
-    {
-      id: 3,
-      title: 'Weather Dashboard',
-      description: 'Beautiful weather application with location-based forecasts, interactive charts, and responsive design. Built with React and Chart.js.',
-      image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['React', 'Chart.js', 'Weather API', 'Tailwind CSS'],
-      category: 'frontend',
-      featured: false,
-      githubUrl: 'https://github.com',
-      liveUrl: 'https://example.com',
-      year: '2023'
-    },
-    {
-      id: 4,
-      title: 'Portfolio Website',
-      description: 'Responsive portfolio website built with Next.js and modern CSS animations. Optimized for performance and SEO with perfect Lighthouse scores.',
-      image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['Next.js', 'CSS3', 'Framer Motion', 'Vercel'],
-      category: 'frontend',
-      featured: false,
-      githubUrl: 'https://github.com',
-      liveUrl: 'https://example.com',
-      year: '2022'
-    },
-    {
-      id: 5,
-      title: 'Social Media Dashboard',
-      description: 'Analytics dashboard for social media management with data visualization, automated reporting, and real-time metrics tracking.',
-      image: 'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['React', 'Redux Toolkit', 'D3.js', 'Express', 'MongoDB'],
-      category: 'fullstack',
-      featured: false,
-      githubUrl: 'https://github.com',
-      liveUrl: 'https://example.com',
-      year: '2022'
-    },
-    {
-      id: 6,
-      title: 'Recipe Finder App',
-      description: 'Mobile-first recipe application with search functionality, favorites, meal planning, and shopping list generation features.',
-      image: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['React', 'Redux', 'Recipe API', 'PWA'],
-      category: 'frontend',
-      featured: false,
-      githubUrl: 'https://github.com',
-      liveUrl: 'https://example.com',
-      year: '2022'
-    },
-    {
-      id: 7,
-      title: 'Real Estate Platform',
-      description: 'Comprehensive real estate platform with property listings, virtual tours, mortgage calculator, and agent management system.',
-      image: 'https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['Next.js', 'TypeScript', 'Prisma', 'PostgreSQL', 'AWS'],
-      category: 'fullstack',
-      featured: false,
-      githubUrl: 'https://github.com',
-      liveUrl: 'https://example.com',
-      year: '2021'
-    },
-    {
-      id: 8,
-      title: 'Fitness Tracking App',
-      description: 'Personal fitness tracking application with workout plans, progress monitoring, and social features for motivation.',
-      image: 'https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['React', 'Redux', 'Chart.js', 'Firebase'],
-      category: 'frontend',
-      featured: false,
-      githubUrl: 'https://github.com',
-      liveUrl: 'https://example.com',
-      year: '2021'
-    }
-  ]
+  {
+    id: 1,
+    title: 'Health Management System (HMS)',
+    description:
+      'Scalable backend Health Management System with JWT-based role access for Patients, Doctors, and Admins. Supports appointment booking, status tracking, real-time chat, and a normalized SQL Server database architecture.',
+    image: 'https://images.pexels.com/photos/40568/medical-appointment-doctor-healthcare-40568.jpeg?auto=compress&cs=tinysrgb&w=800',
+    technologies: [
+      'Node.js',
+      'Express.js',
+      'SQL Server',
+      'MSSQL',
+      'JWT',
+      'REST APIs'
+    ],
+    category: 'fullstack',
+    featured: true,
+    githubUrl: 'https://github.com/jitugopale2426/Health_Management_System.git',
+    liveUrl: 'https://your-hms-demo.com',
+    year: '2025'
+  },
+  {
+    id: 2,
+    title: 'Multi-AI Agent System',
+    description:
+      'Collaborative multi-agent AI system integrating OpenAI APIs and local LLMs for task automation, intelligent decision-making, and dynamic response generation.',
+    image: 'https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg?auto=compress&cs=tinysrgb&w=800',
+    technologies: [
+      'Node.js',
+      'React.js',
+      'OpenAI API',
+      'Ollama',
+      'Local LLMs'
+    ],
+    category: 'fullstack',
+    featured: true,
+    githubUrl: 'https://github.com/jitugopale2426/MultiAgent_Ollama.git',
+    liveUrl: 'https://your-ai-agent-demo.com',
+    year: '2025'
+  },
+  {
+    id: 3,
+    title: 'Flat Management System',
+    description:
+      'Role-based flat management system with admin approval workflows, enquiry handling, and secure authentication using JWT.',
+    image: 'https://images.pexels.com/photos/439391/pexels-photo-439391.jpeg?auto=compress&cs=tinysrgb&w=800',
+    technologies: [
+      'React.js',
+      'Node.js',
+      'Prisma',
+      'MySQL',
+      'JWT'
+    ],
+    category: 'fullstack',
+    featured: false,
+    githubUrl: 'https://github.com/jitugopale2426/Flat_Management_System.git',
+    liveUrl: 'https://your-flat-demo.com',
+    year: '2024'
+  },
+  {
+    id: 4,
+    title: 'Personal Portfolio',
+    description:
+      'Responsive personal portfolio showcasing projects, experience, certifications, and skills with a clean UI and optimized performance.',
+    image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
+    technologies: [
+      'HTML',
+      'CSS',
+      'JavaScript'
+    ],
+    category: 'frontend',
+    featured: false,
+    githubUrl: 'https://github.com/Jitugopale/Portfolio.git',
+    liveUrl: 'https://your-portfolio.com',
+    year: '2024'
+  }
+];
+
 
   const filteredProjects = filter === 'all' 
   ? projects 
@@ -133,14 +211,14 @@ const ProjectsPage = () => {
             <Card className="bg-white dark:bg-gray-800 shadow-lg">
               <CardContent className="flex flex-col items-center">
                 <div className="font-bold text-2xl lg:text-3xl text-blue-500">
-                  8
+                  4
                 </div>
                 <div className="text-md text-muted-foreground mt-1">
                   Total Projects
                 </div>
               </CardContent>
             </Card>
-            <Card>
+            <Card className="bg-white dark:bg-gray-800 shadow-lg">
               <CardContent className="flex flex-col items-center">
                 <div className="font-bold text-2xl lg:text-3xl text-blue-500">
                   2
@@ -150,7 +228,7 @@ const ProjectsPage = () => {
                 </div>
               </CardContent>
             </Card>
-            <Card>
+            <Card className="bg-white dark:bg-gray-800 shadow-lg">
               <CardContent className="flex flex-col items-center">
                 <div className="font-bold text-2xl lg:text-3xl text-blue-500">
                   15+
@@ -160,7 +238,7 @@ const ProjectsPage = () => {
                 </div>
               </CardContent>
             </Card>
-            <Card>
+            <Card className="bg-white dark:bg-gray-800 shadow-lg">
               <CardContent className="flex flex-col items-center">
                 <div className="font-bold text-2xl lg:text-3xl text-blue-500">
                   5+
