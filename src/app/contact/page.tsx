@@ -81,7 +81,8 @@ const ContactPage = () => {
         </motion.div>
       </section>
 
-      <section className="bg-gray-50">
+      <section className="bg-gray-50 dark:bg-gray-900">
+        {" "}
         <div className="max-w-7xl mx-auto pt-10 pb-10">
           <div className="grid md:grid-cols-3 sm:grid-col-1 gap-8 p-4 lg:p-8">
             <motion.div
@@ -101,7 +102,8 @@ const ContactPage = () => {
 
                   <div className="text-center">
                     <h1 className="text-xl font-medium">Email</h1>
-                    <p className="text-md text-gray-500 mt-1">
+                    <p className="text-md text-gray-500 dark:text-gray-400 mt-1">
+                      {" "}
                       Send me an email anytime
                     </p>
                   </div>
@@ -182,7 +184,8 @@ const ContactPage = () => {
         </div>
       </section>
 
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-950">
+        {" "}
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
             <motion.div
@@ -360,11 +363,13 @@ const ContactPage = () => {
 
                     <CardContent className="space-y-4">
                       <motion.div whileHover={{ scale: 1.03 }}>
-                        <Card className="cursor-pointer p-3 hover:bg-gray-50">
+                        <Card className="cursor-pointer p-3 hover:bg-gray-50 dark:hover:bg-gray-800">
+                          {" "}
                           <CardContent>
                             <a
                               href="https://github.com/Jitugopale"
                               target="_blank"
+                              rel="noopener noreferrer"
                             >
                               <div className="flex gap-4 items-center">
                                 <Github className="h-6 w-6" />
@@ -383,7 +388,8 @@ const ContactPage = () => {
                       </motion.div>
 
                       <motion.div whileHover={{ scale: 1.03 }}>
-                        <Card className="cursor-pointer p-5">
+                        <Card className="cursor-pointer p-5 hover:bg-gray-50 dark:hover:bg-gray-800">
+                          {" "}
                           <CardContent>
                             <a
                               href="https://linkedin.com/in/jitesh-gopale-144565242"

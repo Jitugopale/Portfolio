@@ -31,7 +31,7 @@ export default function RootLayout({
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Navigation />
-          <main>{children}</main>
+          <main className="pt-24 min-h-screen">{children}</main>
         </ThemeProvider>
       </body>
     </html>
