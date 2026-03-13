@@ -114,11 +114,13 @@
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply outline-ring/50;
   }
-  body {
-    @apply bg-background text-foreground;
-  }
+}
+
+body {
+  @apply bg-background text-foreground;
+  overflow-x: hidden;
 }
 
 /* Navigation Bar */
@@ -129,10 +131,17 @@
   background-clip: text;
 }
 
-*{
-transition: background-color .3s ease, color .3s ease;
+* {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
-body {
-  @apply bg-white text-black dark:bg-gray-950 dark:text-white;
+/* body {
+  @apply bg-background text-foreground;
+  overflow-x: hidden;
+} */
+
+html {
+  scroll-behavior: smooth;
 }

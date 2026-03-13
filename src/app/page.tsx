@@ -17,10 +17,10 @@ import { Badge } from "@/components/ui/badge";
 export default function Home() {
   return (
     <>
-      <div className="main min-h-screen mt-20 bg-background">
+      <div className="min-h-screen">
         {" "}
         {/* Hero Section */}
-        <section className="max-w-7xl mx-auto pt-12 px-4 lg:my-4">
+        <section className="max-w-7xl mx-auto py-12 px-4">
           <div className="flex flex-col-reverse lg:flex-row items-center lg:items-start gap-12">
             {/* Text Info Section */}
             <motion.div
@@ -99,7 +99,7 @@ export default function Home() {
 
             {/* Photo Section */}
             <motion.div
-              className="relative w-80 h-80 mx-auto"
+              className="relative w-64 h-64 md:w-80 md:h-80 mx-auto"
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -119,9 +119,9 @@ export default function Home() {
             </motion.div>
           </div>
         </section>
-        <section className="mt-32 py-6 bg-gray-50 dark:bg-gray-900">
+        <section className="mt-20 md:mt-32 py-6 bg-gray-50 dark:bg-gray-900">
           {" "}
-          <div className="max-w-7xl mx-auto p-6 mt-12">
+          <div className="max-w-7xl mx-auto p-6">
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -193,7 +193,7 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
-              className="flex flex-wrap gap-4 justify-center mt-16"
+              className="flex flex-wrap gap-4 justify-center mt-12 md:mt-16"
             >
               {[
                 "React",
@@ -316,6 +316,7 @@ export default function Home() {
                             href="https://github.com/jitugopale2426/Health_Management_System.git"
                             target="_blank"
                             rel="noopener noreferrer"
+                            className="flex items-center"
                           >
                             <Github className="mr-2 h-4 w-4" />
                             View Code
