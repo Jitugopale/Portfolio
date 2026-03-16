@@ -54,7 +54,7 @@ const AboutPage = () => {
                 <div className="relative w-65 h-65 mx-auto md:mx-0">
                   <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-white dark:border-gray-700 shadow-2xl">
                     <Image
-                      src="/download.jpg"
+                      src="/profileImage.png"
                       alt="Jitesh Gopale"
                       fill
                       className="object-cover"
